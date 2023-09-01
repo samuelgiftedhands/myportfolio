@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Arial','Times New Roman','Courier New', 'Courier', 'monospace';
+    font-size: 18px;  
+}
+.bodyframe{
+    background-image: url("/images/desk.jpg");
+    height: 10vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    z-index: 1;
+}
+.flexcontent{
+    z-index: inherit;
+    position: absolute;
+    top: 50px; 
+    text-align: left;  
+    color:gray;     
+   
+}
+.inner{
+    margin-left: 8px;
+}
+.btn{
+    border-radius: 3rem;
+}
+.btn a{
+    color:whitesmoke;
+}
+.btn a:hover{
+    color: var(--main-color);
+    text-decoration: none;
+}
+#center img{
+    border: 1px solid gray;
+    margin-top: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;   
+    transition: .5s ease;
+}
+#center:hover img{
+    transform: scaleX(1.1); 
+}
+input{
+    color: gray;
+    border-radius: 3rem;
+    width: 7rem;
+}
+input:hover{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.social-media a{
+    transition: .3s;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    transition: 0.5s ease;
+}
+.social-media a:hover{
+    color: var(--main-color);
+    text-decoration: none;
+    
+}
+#center-image{
+    border-radius: 50%;
+}
+#section{
+    top: 100%;
+    margin: 10px;
+}
+span a:hover{
+    text-decoration: none;
+}
+.flexcontent figure{
+    margin-left: 4px;
+}
+#click-button{
+    margin-left: 4px;
+}
+
+
+/* -----------------meddia screen-----------*/
+@media only screen and (min-width:992px){
+    .container{
+        width: 100%; 
+        height: 100vh ;
+        
+    }
+    .flexcontent{
+        left:8%;
+        align-content: center;
+        margin: 2 auto;
+    }
+        .flexcontent figure{
+            margin-left: 4px;  
+    }
+    #center:hover img{
+        transform: scaleX(1.1); 
+    }
+}
+@media only screen and (min-width:400px){
+    .container{
+        width: 100%; 
+        
+    }
+    .flexcontent{
+        left:5%;
+        right: 2%;
+        align-content: center;
+        margin: 2 auto;
+}
+    .flexcontent figure{
+        margin-left: 4px;
+}
+}
