@@ -140,7 +140,9 @@ input:hover{
     .container{
         width: 100%; 
         height: 100vh ;
-        
+    }
+    figure{
+            margin-left: 5px;   
     }
     .flexcontent{
         left:8%;
@@ -158,6 +160,9 @@ input:hover{
     .container{
         width: 100%; 
         
+    }
+    figure{
+        margin-left: 5px;   
     }
     .flexcontent{
         left:5%;
