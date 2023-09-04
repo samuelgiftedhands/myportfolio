@@ -108,6 +108,30 @@ body{
     color: var(--main-color);
     text-decoration: none;
 }
+.icon{
+    animation: appear 2s ease forwards;
+    opacity: 0;
+}
+.icon1{
+    animation-delay: 0.1s;
+}
+.icon2{
+    animation-delay: 0.5s;
+}
+.icon3{
+    animation-delay: 1s;
+}
+.icon4{
+    animation-delay: 1.5s;
+}
+@keyframes appear 
+{
+    to{
+        opacity: 1;
+    }
+}
+
+
 /* -----------------meddia screen-----------*/
 @media only screen and (min-width:992px){
     .navbar-header {

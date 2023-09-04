@@ -9,13 +9,13 @@ body,html{
 }
 .bodyframe{
     background-image: url("/images/desk.jpg");
-    height: 10vh;
+    height: 100%;
     width: 100%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
-    z-index: 1;
+    
 }
 .flexcontent{
     z-index: inherit;
@@ -49,14 +49,76 @@ body,html{
 #center:hover img{
     transform: scaleX(1.1); 
 }
+.icon{
+    animation: appear 2s ease forwards;
+    opacity: 0;
+}
+.icon1{
+    animation-delay: 0.1s;
+}
+.icon2{
+    animation-delay: 0.5s;
+}
+.icon3{
+    animation-delay: 1s;
+}
+.icon4{
+    animation-delay: 1.5s;
+}
+@keyframes appear 
+{
+    to{
+        opacity: 1;
+    }
+}
+/* set header tag to bounce */
+@keyframes bounce{
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-20px);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
+}
+.bounce{
+    animation: bounce 2s infinite;
+}
+
 input{
-    color: gray;
+    color:#000;
     border-radius: 3rem;
     width: 7rem;
+    text-decoration: none;
 }
 input:hover{
-    color: var(--main-color);
+    color: #fff;
     text-decoration: none;
+}
+@keyframes expand-contrast-animation{
+    0%{
+        transform: scale(0);
+        background-color: lightgrey;
+    }
+    50%{
+        transform: scale(1.2);
+        background-color: #f35dd3;
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.expand-contrast {
+    background-color: lightgrey;
+    column-rule: #fff;
+    cursor: pointer;
+    animation: expand-contrast-animation 2s ease;
 }
 .social-media a{
     transition: .3s;
@@ -71,23 +133,6 @@ input:hover{
     text-decoration: none;
     
 }
-#center-image{
-    border-radius: 50%;
-}
-#section{
-    top: 100%;
-    margin: 10px;
-}
-span a:hover{
-    text-decoration: none;
-}
-.flexcontent figure{
-    margin-left: 4px;
-}
-#click-button{
-    margin-left: 4px;
-}
-
 
 /* -----------------meddia screen-----------*/
 @media only screen and (min-width:992px){
